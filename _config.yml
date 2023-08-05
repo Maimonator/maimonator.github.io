@@ -20,7 +20,7 @@
 
 title: Maimonator
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a software engineer that dabbles in machine learning attempting to maintain a tech blog.
+  I'm a software engineer that dabbles in machine learning, attempting to maintain a tech blog.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://maimonator.dev"
 
@@ -32,6 +32,7 @@ author:
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-katex
 
 remote_theme: jekyll/minima
 minima:

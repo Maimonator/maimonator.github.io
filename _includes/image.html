@@ -1,0 +1,9 @@
+<div class="image-card">
+    <img src="{{ include.uri | relative_url }}" alt="Image">
+    {% if include.text | length > 0 %}
+    <div class="image-text">
+      <p>{{ include.text | length}}</p>
+    </div>
+    {% endif %}
+    <br/>
+</div>
