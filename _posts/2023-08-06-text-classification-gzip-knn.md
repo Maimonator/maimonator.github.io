@@ -201,7 +201,7 @@ But still this is a significant difference than the reported `0.937`.
 
 So what's going on?
 
-Well, as opposed to the regular way of predicting (e.g., majority vote) with some kind of heuristic for tie-breaking, when calculating accuracy the authors took **both labels** in to consideration in the following way:
+Well, as opposed to the regular way of predicting (e.g., majority vote) with some kind of heuristic for tie-breaking, when calculating accuracy the authors took **both labels** into consideration in the following way:
 
 Let's mark the correct label as T (for `True`) and the wrong label as F (for `False`).
 
