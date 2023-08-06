@@ -8,7 +8,7 @@ With the rise of AI in the last year, many people felt like it's the end of crea
 There are thoughts that in the not-so-distant future AI will replace us and we'll be out of jobs and out of purpose.
 AI swept over the art scene (DALL-E 2, Stable Diffusion), had some major advancement in the music scene ([AI Assisted Drake Song](https://en.wikipedia.org/wiki/Heart_on_My_Sleeve_(ghostwriter977_song))), and even some disruptive advancements in the algorithmic scene ([AI learns to multiply matrices](https://www.deepmind.com/blog/discovering-novel-algorithms-with-alphatensor)).
 
-I'm relatively optimistic about the impact of AI on our life, and I'm not  convinced that AI will easily replace us in the foreseeable future. To strengthen this position, I'd like to walk you through recent work on text classification using GZIP compression.
+I'm relatively optimistic about the impact of AI on our life, and I'm not convinced that AI will easily replace us in the foreseeable future. To strengthen this position, I'd like to walk you through recent work on text classification using GZIP compression.
 This paper shows us that in spite of the current trend of bigger neural networks we shouldn't give up on trying alternative methods.
 
 In this post I will go over the paper and the knowledge needed to understand it. In the end, I present a few of my own findings that I find quite interesting. So, even if you already know what the paper is about, make sure to read through to the end 😊.
@@ -182,7 +182,12 @@ Don't worry, we will soon deal this edge-case.
 
 ## But Does it Work?
 
-I was honestly really excited to test it, so I decided to compare it with the model that had the best result in the paper, which was `BERT` (specifically `bert-base-uncased`).
+For testing purposes, all the code I used is available on [GitHub](https://github.com/Maimonator/gzip-vs-bert).
+
+I was honestly really excited to test it, so I decided to compare it with the model that had the best result in the paper, which was `BERT`.
+`BERT` is a Large Language Model (LLM) which was introduced in 2018 by researchers at Google. At the time of it's release it was the best model for NLP related tasks,
+and even though the field of NLP saw a lot of progress since then, `BERT` is still sufficient for many NLP related tasks.
+
 I also used the dataset `AGNews` for comparison. It wasn't a smart and well-thought-out decision, it was just the first dataset on the performance comparison table. I could have chosen any other dataset.
 
 I finetuned `BERT` on the dataset for 1 epoch with a batch size of 128 and learning rate of `2e-5`.
@@ -307,6 +312,7 @@ This makes me suspect that the authors of the paper could have actually received
 
 I'm still not completely bought by this method, so I would probably still prefer to use `BERT` (or any other LLMs for that matter) over this method.
 But still, I really liked how the authors took a step back from the usual trend of "let's build a bigger model" and thought out a somewhat competitive algorithm for `BERT`.
+I'm excited to see what the future holds for new approaches like this, and I hope we see more papers like this one challenging the norms.
 
 Hope you enjoyed this post.
 
