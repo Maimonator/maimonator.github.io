@@ -42,6 +42,8 @@ minima:
     - { platform: twitter, user_url: "https://twitter.com/talmaimon" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/tal-maimon-141251177/" }
 
+google_analytics: G-S3BTELC9HP
+
 # Disqus Comments
 disqus:
     shortname: maimonator-dev
