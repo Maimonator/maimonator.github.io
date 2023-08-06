@@ -13,7 +13,7 @@ This paper shows us that in spite of the current trend of bigger neural networks
 
 In this post I will go over the paper and the knowledge needed to understand it. In the end, I present a few of my own findings that I find quite interesting. So, even if you already know what the paper is about, make sure to read through to the end 😊.
 
-All the code I use is available on my [GitHub Page](https://github.com/Maimonator/gzip-vs-bert)
+All the code I use is available on my [GitHub](https://github.com/Maimonator/gzip-vs-bert)
 
 ## Overview
 
@@ -293,7 +293,7 @@ $$
 This also impacts the distances in a non-linear way, which means that short samples are hurt the most by the bias.
 
 I went on to test the GZIP+KNN method with various bias terms.
-I didn't change the original implementation ([GitHub]()), I just added a different constant in the denominator in every calculation so `-20` actually means **without the metadata** and `0` is the original implementation
+I didn't change the original implementation ([GitHub](https://github.com/Maimonator/gzip-vs-bert)), I just added a different constant in the denominator in every calculation so `-20` actually means **without the metadata** and `0` is the original implementation
 
 {%  include image.html uri='assets/images/embeddings-but-faster/05-k-constant-20-minus.png' %}
 
