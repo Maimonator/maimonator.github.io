@@ -2,22 +2,25 @@
 
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
-<link rel="stylesheet" href="{{ '/assets/css/image.css' | relative_url }}"/>
 
 <!-- JavaScript -->
 <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{
-    delimiters: [
-      { left: '$$',  right: '$$',  display: true  },
-      { left: '$',   right: '$',   display: false },
-      { left: '\\[', right: '\\]', display: true  },
-      { left: '\\(', right: '\\)', display: false }
+onload="renderMathInElement(document.body,{
+  delimiters: [
+    { left: '$$',  right: '$$',  display: true  },
+    { left: '$',   right: '$',   display: false },
+    { left: '\\[', right: '\\]', display: true  },
+    { left: '\\(', right: '\\)', display: false }
   ]});">
 </script>
 
+<!-- Twitter widgets for tweet-block -->
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 {% endif %}
 
+<link rel="stylesheet" href="{{ '/assets/css/image.css' | relative_url }}"/>
 
 <!-- Twitter cards -->
 <meta name="twitter:site"    content="@{{ site.twitter_username }}">
